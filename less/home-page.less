@@ -10,7 +10,7 @@ header{
     padding-left: 25px;
     padding-right: 25px;
     }
-    .fruit{
+    .fruit-content{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -41,7 +41,7 @@ header{
     }
 
 .home {
-    .fruit{
+    .fruit-content{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -70,7 +70,7 @@ header{
         padding-right: 1%;
     }
 
-    .img-content {
+    .top-header {
         width: 48%;
         padding-left: 1%;
         @media (min-width: 500px){
@@ -83,60 +83,4 @@ header{
         }
     }
     }
-
-    .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-    @media (min-width: 500px){
-        flex-direction: column;
-    }
-    
-    .text-content {
-        padding-left: 1%;
-        padding-right: 0;
-    }x
-
-    .img-content{
-        padding-right: 1%;
-        padding-left: 0;
-    }
-    }
-
-    .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
-    
-    @media (min-width: 500px){
-        flex-direction: column;
-        align-items: center;
-        width: 85%;
-        margin: 12px;
-    }
-    img {
-        border-radius: 10px;
-    }
-    }
-    .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
-    @media @mobile {
-        flex-direction: column;
-        background-color: blue;
-        text-align: center; 
-        align-items: center;
-    }
-    
-    .destination {
-        width: 30%;
-        margin-bottom: 30px;
-        .btn{
-        .button(100px, 15px);
-        }
-        @media @mobile{
-        width: 90%;
-        }
-    }
-    }
-}// home
+}
