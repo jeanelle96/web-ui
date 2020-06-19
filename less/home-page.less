@@ -9,6 +9,21 @@ header{
     padding-bottom: 25px;
     padding-left: 25px;
     padding-right: 25px;
+    
+    @media (max-width: 800px){
+        background: lightslategrey;
+        display: flex;
+        align-items: flex-start;
+        text-align: right;
+        justify-content: space-between;
+    }
+    @media (max-width: 500px){
+        background: rgb(230, 196, 104);
+        display: flex;
+        align-items: flex-start;
+        text-align: center;
+        justify-content: space-between;
+    }
 
     }
     .fruit-content{
@@ -28,6 +43,7 @@ header{
     padding-top: 13px;
     padding-bottom: 15px;
     }
+    
 }   
     nav{
     align-self: flex-end;
@@ -37,6 +53,11 @@ header{
         margin-left: 12px;
         margin-right: 12px;
         font-size: 1.8rem;
+        @media (max-width: 500px){
+            text-align: center;
+            align-items: stretch;
+            justify-content: space-between;
+        }
     }
     }
 
@@ -52,20 +73,38 @@ header{
             color: white;
             font-size: 2rem;
             padding: 2px;
+            @media (max-width: 800px){
+                display: flex;
+                align-items: flex-start;
+                text-align: right;
+                justify-content: space-between;
+                background: tan;
+            }
         }
         }
-        p {
+        p { 
         text-align: center;
         color: black;
         font-size: 1.8rem;
         padding: 20px;
         text-shadow: none;
+        @media (max-width: 800px){
+            text-align: center;
+
+        }
         }
         .img-content{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
+            @media (max-width: 800px){
+                max-width: 100%;
+                height: 50%;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
         }
     }
         

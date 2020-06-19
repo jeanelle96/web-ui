@@ -163,13 +163,9 @@ body p {
 html img,
 body img {
   max-width: 100%;
-  height: auto;
-}
-html .container,
-body .container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 1000px) {
   header .top-header {
@@ -178,6 +174,12 @@ body .container {
   }
   header .top-header h2 {
     margin-top: 10px;
+  }
+}
+@media (max-width: 800px) {
+  html,
+  body {
+    background: lightyellow;
   }
 }
 footer {
@@ -202,6 +204,24 @@ header .top-header {
   padding-bottom: 25px;
   padding-left: 25px;
   padding-right: 25px;
+}
+@media (max-width: 800px) {
+  header .top-header {
+    background: lightslategrey;
+    display: flex;
+    align-items: flex-start;
+    text-align: right;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 500px) {
+  header .top-header {
+    background: #e6c468;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: space-between;
+  }
 }
 header .fruit-content {
   display: flex;
@@ -230,6 +250,13 @@ nav a {
   margin-right: 12px;
   font-size: 1.8rem;
 }
+@media (max-width: 500px) {
+  nav a {
+    text-align: center;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+}
 div .text-content {
   width: 100%;
   border-top: 2px dashed grey;
@@ -243,6 +270,15 @@ div .text-content .btn {
   font-size: 2rem;
   padding: 2px;
 }
+@media (max-width: 800px) {
+  div .text-content .btn {
+    display: flex;
+    align-items: flex-start;
+    text-align: right;
+    justify-content: space-between;
+    background: tan;
+  }
+}
 div p {
   text-align: center;
   color: black;
@@ -250,9 +286,22 @@ div p {
   padding: 20px;
   text-shadow: none;
 }
+@media (max-width: 800px) {
+  div p {
+    text-align: center;
+  }
+}
 div .img-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 800px) {
+  div .img-content {
+    max-width: 100%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
