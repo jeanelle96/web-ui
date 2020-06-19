@@ -9,6 +9,7 @@ header{
     padding-bottom: 25px;
     padding-left: 25px;
     padding-right: 25px;
+
     }
     .fruit-content{
     display: flex;
@@ -17,20 +18,19 @@ header{
     align-items: center;
     }
     h2{
-    text-align: left;
+    text-align: center;
     padding-top: 12px;
     }
     p{
-    text-align: left;
+    text-align: center;
+    margin-left: 27%;
     width: 50%;
-    border-bottom: 2px dashed grey;
     padding-top: 13px;
     padding-bottom: 15px;
     }
-}
-    
+}   
     nav{
-    align-self: center;
+    align-self: flex-end;
     a{
         text-decoration:none;
         color: black;
@@ -40,47 +40,32 @@ header{
     }
     }
 
-.home {
-    .fruit-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-
-    h2{
+    div{
+        .text-content{
+        width: 100%;
+        border-top: 2px dashed grey;
+        background:rgb(161, 194, 214);
+        text-shadow: 1px 1px #A9A9A9;
+        .btn{
+            margin-left: 47%;
+            background-color: rgb(241, 195, 109);
+            color: white;
+            font-size: 2rem;
+            padding: 2px;
+        }
+        }
+        p {
         text-align: center;
-        padding-top: 12px;
+        color: black;
+        font-size: 1.8rem;
+        padding: 20px;
+        text-shadow: none;
+        }
+        .img-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
     }
-    p{
-        text-align: left;
-        width: 50%;
-        border-bottom: 2px dashed grey;
-        padding-top: 13px;
-        padding-bottom: 15px;
         
-    }    
-
-    @media (min-width: 500px){
-    flex-direction: column;
-    align-items: center;
-    }
-
-    .text-content {
-        width: 48%;
-        padding-right: 1%;
-    }
-
-    .top-header {
-        width: 48%;
-        padding-left: 1%;
-        @media (min-width: 500px){
-        width: 85%;
-        margin: 12px;
-        }
-
-        img {
-        border-radius: 10px;
-        }
-    }
-    }
-}
